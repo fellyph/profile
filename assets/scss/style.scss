@@ -1,5 +1,6 @@
 @import "fonts";
 @import "normalize";
+@import "colors";
 
 /* ----------------------- Content -----------------------------*/
 
@@ -19,8 +20,8 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: #FFFFFF;
-        background-color: #db5b5b;
+        color: #fff;
+        background-color: $tag-color;
     }
 }
 
@@ -28,15 +29,12 @@ a {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-}
-
-.row {
     padding: 0 1em;
     box-sizing: border-box;
 }
 
 .skills,
-.links,
+.social,
 .bio {
     border-bottom: 1px solid #333;
     margin-bottom: 20px;
@@ -45,9 +43,14 @@ a {
 
 /* ------------------- Header ------------------------- */
 
-h2 {
-    color: #3e3e3e;
+h1,
+h2,
+h3 {
     font-family: 'DukeFill';
+    color: $dark-gray;
+}
+
+h2 {
     font-size: 3em;
 }
 
@@ -59,14 +62,12 @@ h2 {
     text-align: center;
 
     h1 {
-        color: #3e3e3e;
-        font-family: 'DukeFill';
         font-size: 8em;
         margin: 5px 0;
     }
 
     h2 {
-        color: #dcbe34;
+        color: $yellow;
         text-shadow: 1px 1px #333;
         margin: 0 0 10px 0;
     }
@@ -78,40 +79,50 @@ h2 {
     height: 200px;
     overflow: hidden;
     margin: 0 auto;
-    border: 4px #3e3e3e solid;
+    border: 4px $dark-gray solid;
 }
 
-/* ----------------------------- about ------------------------- */
+/* ----------------------------- social ------------------------- */
 
 .social-list {
+    margin: 0;
+    padding: 0;
+
     a {
         border-bottom: 7px solid #666;
-        display: inline-block;
 
         &:hover {
-            border-bottom: 7px solid #9de8fb;
-            background: none;
+            border-bottom: 7px solid $hover-social;
         }
     }
 
-    .columns {
-        margin-bottom: 10px;
+    .social-item {
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
     }
 }
 
-.tag {
+/* ----------------------------- skills ------------------------- */
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+}
+
+.skill {
     list-style: none;
     margin-bottom: 8px;
     display: inline-block;
     margin-right: 10px;
     padding: 4px 6px;
     color: #fff;
-    background-color: #db5b5b;
+    background-color: $tag-color;
     font-size: 1.2em;
 
     &:before {
         content: "";
-        border-color: transparent #DB5B5B transparent transparent;
+        border-color: transparent $tag-color transparent transparent;
         border-style: solid;
         border-width: 6px;
         float: left;
@@ -120,7 +131,7 @@ h2 {
     }
 
     &:hover {
-        color: #db5b5b;
+        color: $tag-color;
         background-color: #fff;
         box-shadow: 2px 2px #ccc;
 
