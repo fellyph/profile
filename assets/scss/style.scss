@@ -11,7 +11,9 @@ body {
 
 a {
     color: #fff;
+    background-color: $tag-color;
     text-decoration: none;
+    padding: 0 0.2em;
 
     &:visited {
         text-decoration: none;
@@ -87,19 +89,22 @@ h2 {
 .social-list {
     margin: 0;
     padding: 0;
+}
 
-    a {
-        border-bottom: 7px solid #666;
-
-        &:hover {
-            border-bottom: 7px solid $hover-social;
+.social-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 7px;
+    font-size: 0;
+    background: #ccc;
+    
+    &:hover {
+        background: $hover-social;
+        
+        img {
+            opacity: 0.7;
         }
-    }
-
-    .social-item {
-        list-style: none;
-        display: inline-block;
-        margin-right: 10px;
     }
 }
 
