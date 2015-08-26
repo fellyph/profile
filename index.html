@@ -4,23 +4,26 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.min.css" />
+        <title>Fellyph Cintra - Front-End Engineer</title>
     </head>
 
-    <body>
+    <body itemscope itemtype="https://schema.org/AboutPage">
         <section class="main container">
             <header class="top-site row">
-                <img class="me" src="assets/img/fellyph.jpg" width="200" height="200" title="Fellyph Cintra"/>
-                <h1>FELLYPH CINTRA</h1>
-                <h2>Front-end engineer</h2>
+                <img class="me" src="assets/img/fellyph.jpg" width="200" height="200" title="Fellyph Cintra" itemprop="image">
+                <h1 itemprop="name">FELLYPH CINTRA</h1>
+                <h2 itemprop="jobTitle">Front-end engineer</h2>
             </header>
 
             <article class="bio row">
                 <header>
                     <h2>About</h2>
                 </header>
-                <p>I have worked as a Web Developer since 2004. I am currently working as a Front-end engineer at <a href="http://www.elo7.com.br">Elo7</a>, where I develop an e-commerce of handmade products in Brasil and Argentina. I’m also a teacher at DRC training center.</p>
+                <div itemprop="description">
+                    <p>I have worked as a Web Developer since 2004. I am currently working as a Front-end engineer at <a href="http://www.elo7.com.br">Elo7</a>, where I develop an e-commerce of handmade products in Brasil and Argentina. I’m also a teacher at DRC training center.</p>
 
-                <p>My main focus is frond-end development and my strength is client-side in which I use HTML, CSS, JavaScript, SASS and Compass. On server-side I regularly use Java with vRaptor. I also use GIT for version control, GruntJS for automate tasks and tests with Jenkins.</p>
+                    <p>My main focus is frond-end development and my strength is client-side in which I use HTML, CSS, JavaScript, SASS and Compass. On server-side I regularly use Java with vRaptor. I also use GIT for version control, GruntJS for automate tasks and tests with Jenkins.</p>
+                </div>
             </article>
 
             <article class="social row">
@@ -29,52 +32,52 @@
                 </header>
                 <ul class="social-list">
                     <li class="social-item">
-                        <a href="http://www.fellyph.com.br/blog">
+                        <a href="http://www.fellyph.com.br/blog" itemprop="url">
                             <img src="assets/img/blog.png" width="120" height="120" title="Blog Fellyph Cintra">
                         </a>
                     </li>
                     <li class="social-item">
-                        <a href="http://www.linkedin.com/profile/view?id=35869412&trk=tab_pro">
-                            <img src="assets/img/linkedin.png" width="120" height="120" title="@fellyph"/>
+                        <a href="http://www.linkedin.com/profile/view?id=35869412&trk=tab_pro" itemprop="url">
+                            <img src="assets/img/linkedin.png" width="120" height="120" title="@fellyph">
                         </a>
                     </li>
                     <li class="social-item">
-                        <a href="http://www.facebook.com/FellyphBlog">
+                        <a href="http://www.facebook.com/FellyphBlog" itemprop="url">
                             <img src="assets/img/facebook.png" title="@fellyph" width="120" height="120">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="http://www.twitter.com/fellyph">
-                            <img src="assets/img/twitter.png" title="@fellyph" width="120" height="120"/>
+                            <img src="assets/img/twitter.png" title="@fellyph" width="120" height="120">
                         </a>
                     </li>
                     <li class="social-item">
-                        <a href="http://www.github.com/fellyph">
-                            <img src="assets/img/github.png" title="@fellyph" width="120" height="120"/>
+                        <a href="http://www.github.com/fellyph" itemprop="url">
+                            <img src="assets/img/github.png" title="@fellyph" width="120" height="120">
                         </a>
                     </li>
                     <li class="social-item">
-                        <a href="http://www.slideshare.net/fellyph/">
-                            <img src="assets/img/slideshare.png" title="@fellyph" width="120" height="120"/>
+                        <a href="http://www.slideshare.net/fellyph/" itemprop="url">
+                            <img src="assets/img/slideshare.png" title="@fellyph" width="120" height="120">
                         </a>
                     </li>
                 </ul>
             </article>
 
-            <article class="skills row">
+            <article class="skills row" itemscope itemtype="http://schema.org/ItemList">
                 <header>
                     <h2>Skills</h2>
                 </header>
                 
                 <ul class="skill-list">
-                    <li class="skill">WordPress</li>
-                    <li class="skill">Javascript</li>
-                    <li class="skill">HTML5</li>
-                    <li class="skill">CSS3</li>
-                    <li class="skill">SASS</li>
-                    <li class="skill">Java</li>
-                    <li class="skill">Webworks</li>
-                    <li class="skill">PHP</li>
+                    <li class="skill" itemprop="itemListElement">WordPress</li>
+                    <li class="skill" itemprop="itemListElement">Javascript</li>
+                    <li class="skill" itemprop="itemListElement">HTML5</li>
+                    <li class="skill" itemprop="itemListElement">CSS3</li>
+                    <li class="skill" itemprop="itemListElement">SASS</li>
+                    <li class="skill" itemprop="itemListElement">Java</li>
+                    <li class="skill" itemprop="itemListElement">Webworks</li>
+                    <li class="skill" itemprop="itemListElement">PHP</li>
                 </ul>
             </article>
         </section>
