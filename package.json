@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/fellyph/profile#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.12.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
   }
 }
