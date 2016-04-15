@@ -1,0 +1,23 @@
+{
+  "name": "profile-fellyph",
+  "description": "Profile de Fellyph Cintra",
+  "main": "index.js",
+  "authors": [
+    "Fellyph Cintra"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "homepage": "https://github.com/fellyph/profile",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
