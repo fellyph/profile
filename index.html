@@ -50,17 +50,12 @@
 				</ul>
 			</article>
 
-			<article class="blog row">
+			<section class="blog row">
 			    <header>
 			        <h2>Leia no Blog</h2>
 			    </header>
-			    <ul class="posts" ng-repeat="post in profile.posts">
-			        <a href="{{post.link}}" title="{{post.title.rendered}}">
-			            {{post.title.rendered}}
-			        </a>
-			        {{post.excerpt.rendered}}
-			    </ul>
-			</article>
+			    <blog-article ng-repeat="post in profile.posts"></blog-article>   
+			</section>
 
 			<article class="skills row" itemscope itemtype="http://schema.org/ItemList">
 				<header>

@@ -1,16 +1,27 @@
 (function() {
     var app = angular.module('profile', []);
 
-    app.controller('ProfileController', [ '$http', function($http) {
+    app.directive('blogArticle', function() {
+        return {
+            restrict: 'E',
+            templateUrl: '/assets/templates/blog-article.html'
+        }
+    })
+
+    app.controller('ProfileController', [ '$http', '$scope', '$sce', function($http, $scope, $sce) {
         var profile = this;
 
         profile.socials = socials;
         profile.posts = [];
 
-        $http.get('http://fellyph.com.br/blog/wp-json/wp/v2/posts').success(function(data){
+        $http.get('http://fellyph.com.br/blog/wp-json/wp/v2/posts/?per_page=3').success( function(data){
             profile.posts = data;
             console.log(profile.posts);
         });
+
+        $scope.renderHtml = function(html_code) {
+            return $sce.trustAsHtml(html_code);
+        };
     }]);
 
     var socials = [{
