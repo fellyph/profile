@@ -1,0 +1,30 @@
+{
+  "name": "profile-fellyph",
+  "version": "1.0.0",
+  "description": "Profile de Fellyph Cintra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellyph/profile.git"
+  },
+  "keywords": [
+    "angular",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Fellyph Cintra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fellyph/profile/issues"
+  },
+  "homepage": "https://github.com/fellyph/profile#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

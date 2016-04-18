@@ -1,96 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html ng-app="profile">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta property="og:title" content="Fellyph Cintra - Front-End Engineer"/>
-        <meta property="og:type" content="profile"/>
-        <meta property="og:description" content="I am currently working as a Front-end engineer at Elo7, where I develop an e-commerce of handmade products in Brasil and Argentina."/>
-        <meta property="og:url" content="http://www.fellyph.com.br/"/>
-        <meta property="og:site_name" content="Fellyph Cintra - Front-End Engineer"/>
+		<meta property="og:title" content="Fellyph Cintra - Front-End Engineer"/>
+		<meta property="og:type" content="profile"/>
+		<meta property="og:description" content="I am currently working as a Front-end engineer at Elo7, where I develop an e-commerce of handmade products in Brasil and Argentina."/>
+		<meta property="og:url" content="http://www.fellyph.com.br/"/>
+		<meta property="og:site_name" content="Fellyph Cintra - Front-End Engineer"/>
 
-        <meta name="author" content="Fellyph Cintra"/>
-        <meta name="description" content="I am currently working as a Front-end engineer at Elo7, where I develop an e-commerce of handmade products in Brasil and Argentina."/>
-        <meta name="keywords" content="Front-End engineer, Developer, WordPress, HTML5, JavaScript, CSS3"/>
+		<meta name="author" content="Fellyph Cintra"/>
+		<meta name="description" content="I am currently working as a Front-end engineer at Elo7, where I develop an e-commerce of handmade products in Brasil and Argentina."/>
+		<meta name="keywords" content="Front-End engineer, Developer, WordPress, HTML5, JavaScript, CSS3"/>
 
-        <link rel="stylesheet" href="assets/css/style.min.css" />
-        <title>Fellyph Cintra - Front-End Engineer</title>
-    </head>
+		<link rel="stylesheet" href="assets/css/style.min.css" />
+		<title>Fellyph Cintra - Front-End Engineer</title>
+	</head>
 
-    <body itemscope itemtype="https://schema.org/Person">
-        <section class="main container">
-            <header class="top-site row">
-                <img class="me" src="assets/img/fellyph.jpg" width="200" height="200" title="Fellyph Cintra" itemprop="image" alt="Fellyph Cintra">
-                <h1 itemprop="name">FELLYPH CINTRA</h1>
-                <h2 itemprop="jobTitle">Front-end engineer</h2>
-            </header>
+	<body itemscope itemtype="https://schema.org/Person">
+		<section class="main container" ng-controller="ProfileController as profile">
+			<header class="top-site row">
+				<img class="me" src="assets/img/fellyph.jpg" width="200" height="200" title="Fellyph Cintra" itemprop="image" alt="Fellyph Cintra">
+				<h1 itemprop="name">FELLYPH CINTRA</h1>
+				<h2 itemprop="jobTitle">Front-end engineer</h2>
+			</header>
 
-            <article class="bio row">
-                <header>
-                    <h2>About</h2>
-                </header>
-                <div itemprop="description">
-                    <p>I have worked as a Web Developer since 2004. I am currently working as a Front-end engineer at <a href="http://www.elo7.com.br" title="Elo7" alt="Elo7 company">Elo7</a>, where I develop an e-commerce of handmade products in Brasil and Argentina. I’m also a teacher at DRC training center.</p>
+			<article class="bio row">
+				<header>
+					<h2>About</h2>
+				</header>
+				<div itemprop="description">
+					<p>I have worked as a Web Developer since 2004. I am currently working as a Front-end engineer at <a href="http://www.elo7.com.br" title="Elo7" alt="Elo7 company">Elo7</a>, where I develop an e-commerce of handmade products in Brasil and Argentina. I’m also a teacher at DRC training center.</p>
 
-                    <p>My main focus is frond-end development and my strength is client-side in which I use HTML, CSS, JavaScript, SASS and Compass. On server-side I regularly use Java with vRaptor. I also use GIT for version control, GruntJS for automate tasks and tests with Jenkins.</p>
-                </div>
-            </article>
+					<p>My main focus is frond-end development and my strength is client-side in which I use HTML, CSS, JavaScript, SASS and Compass. On server-side I regularly use Java with vRaptor. I also use GIT for version control, GruntJS for automate tasks and tests with Jenkins.</p>
+				</div>
+			</article>
 
-            <article class="social row">
-                <header>
-                    <h2>Social</h2>
-                </header>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="http://www.fellyph.com.br/blog" itemprop="url" title="a little about me">
-                            <img src="assets/img/blog.png" width="120" height="120" title="Blog Fellyph Cintra" alt="WordPress icon">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://br.linkedin.com/pub/fellyph-cintra/10/19/918" itemprop="url" title="more professional information">
-                            <img src="assets/img/linkedin.png" width="120" height="120" title="@fellyph" alt="linkedin icon">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="http://www.facebook.com/FellyphBlog" itemprop="url" title="like my fanpage">
-                            <img src="assets/img/facebook.png" title="facebook fanpage" width="120" height="120" alt="facebook icon">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="http://www.twitter.com/fellyph" itemprop="url" title="follow me on twitter">
-                            <img src="assets/img/twitter.png" title="@fellyph" width="120" height="120" alt="twitter icon">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="http://www.github.com/fellyph" itemprop="url" title="check my github">
-                            <img src="assets/img/github.png" title="Github Fellyph" width="120" height="120" alt="Github icon">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="http://www.slideshare.net/fellyph/" itemprop="url" title="Click here and check my slideshare" >
-                            <img src="assets/img/slideshare.png" title="slideshare Fellyph Cintra" width="120" height="120" alt="Slideshare icon">
-                        </a>
-                    </li>
-                </ul>
-            </article>
+			<article class="social row">
+				<header>
+					<h2>Social</h2>
+				</header>
+				<ul class="social-list" ng-repeat="social in profile.socials">
+					<li class="social-item">
+						<a href="{{social.url}}" itemprop="url" title="{{social.titleUrl}}">
+							<img ng-src="{{social.assets}}" width="120" height="120" title="{{social.title}}" alt="{{social.alt}}">
+						</a>
+					</li>
+				</ul>
+			</article>
 
-            <article class="skills row" itemscope itemtype="http://schema.org/ItemList">
-                <header>
-                    <h2>Skills</h2>
-                </header>
-                
-                <ul class="skill-list">
-                    <li class="skill" itemprop="itemListElement">WordPress</li>
-                    <li class="skill" itemprop="itemListElement">Javascript</li>
-                    <li class="skill" itemprop="itemListElement">HTML5</li>
-                    <li class="skill" itemprop="itemListElement">CSS3</li>
-                    <li class="skill" itemprop="itemListElement">SASS</li>
-                    <li class="skill" itemprop="itemListElement">Java</li>
-                    <li class="skill" itemprop="itemListElement">Webworks</li>
-                    <li class="skill" itemprop="itemListElement">PHP</li>
-                </ul>
-            </article>
-        </section>
-    </body>
+			<section class="blog row">
+			    <header>
+			        <h2>Leia no Blog</h2>
+			    </header>
+			    <blog-article ng-repeat="post in profile.posts"></blog-article>   
+			</section>
+
+			<article class="skills row" itemscope itemtype="http://schema.org/ItemList">
+				<header>
+					<h2>Skills</h2>
+				</header>
+				
+				<ul class="skill-list">
+					<li class="skill" itemprop="itemListElement">WordPress</li>
+					<li class="skill" itemprop="itemListElement">Javascript</li>
+					<li class="skill" itemprop="itemListElement">HTML5</li>
+					<li class="skill" itemprop="itemListElement">CSS3</li>
+					<li class="skill" itemprop="itemListElement">SASS</li>
+					<li class="skill" itemprop="itemListElement">Java</li>
+					<li class="skill" itemprop="itemListElement">Webworks</li>
+					<li class="skill" itemprop="itemListElement">PHP</li>
+				</ul>
+			</article>
+            <script type="text/javascript" src="assets/components/angular/angular.min.js"></script>
+            <script type="text/javascript" src="assets/js/app.js"></script>
+		</section>
+	</body>
 </html>
