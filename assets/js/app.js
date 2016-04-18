@@ -6,13 +6,26 @@
             restrict: 'E',
             templateUrl: '/assets/templates/blog-article.html'
         }
-    })
+    });
+    
+    app.directive('portfolioArticle', function() {
+        return {
+            restrict: 'E',
+            templateUrl: '/assets/templates/portfolio-article.html'
+        }
+    });
 
     app.controller('ProfileController', [ '$http', '$scope', '$sce', function($http, $scope, $sce) {
         var profile = this;
 
         profile.socials = socials;
         profile.posts = [];
+        profile.portfolios = [];
+
+        $http.get('//fellyph.com.br/blog/wp-json/wp/v2/portfolio').success( function(port) {
+            profile.portfolios = port;
+            console.log(profile.portfolios);
+        });
 
         $http.get('http://fellyph.com.br/blog/wp-json/wp/v2/posts/?per_page=3').success( function(data){
             profile.posts = data;
