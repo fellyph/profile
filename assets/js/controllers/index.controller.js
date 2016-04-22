@@ -4,22 +4,37 @@
         .module('profile', [])
         .controller('ProfileController', ProfileController);
 
-    ProfileController.$inject = [ '$http', '$scope', '$sce'];
+    ProfileController.$inject = ['$scope', '$sce', 'dataservice'];
 
-    function ProfileController ($http, $scope, $sce) {
+    function ProfileController ($scope, $sce, dataservice) {
             var profile = this;
 
             profile.socials = socials;
             profile.posts = [];
             profile.portfolios = [];
 
-            $http.get('//fellyph.com.br/blog/wp-json/wp/v2/portfolio').success( function(port) {
-                profile.portfolios = port;
-            });
+            init();
 
-            $http.get('http://fellyph.com.br/blog/wp-json/wp/v2/posts/?per_page=3').success( function(data){
-                profile.posts = data;
-            });
+            function init() {
+                getPortfolio();
+                getPosts();
+            }
+
+            function getPosts() {
+                return dataservice.getPosts()
+                    .then(function (data) {
+                        profile.posts = data;
+                        return profile.posts;
+                    });
+            }
+
+            function getPortfolio() {
+                return dataservice.getPortfolio()
+                    .then(function (data) {
+                        profile.portfolios = data;
+                        return profile.portfolios;
+                    });
+            }
 
             $scope.renderHtml = function(html_code) {
                 return $sce.trustAsHtml(html_code);
