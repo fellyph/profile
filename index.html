@@ -41,8 +41,8 @@
 				<header>
 					<h2>Social</h2>
 				</header>
-				<ul class="social-list" ng-repeat="social in profile.socials">
-					<li class="social-item">
+				<ul class="social-list">
+					<li class="social-item" ng-repeat="social in profile.socials">
 						<a href="{{social.url}}" itemprop="url" title="{{social.titleUrl}}">
 							<img ng-src="{{social.assets}}" width="120" height="120" title="{{social.title}}" alt="{{social.alt}}">
 						</a>
