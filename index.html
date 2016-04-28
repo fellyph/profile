@@ -23,7 +23,7 @@
 			<header class="top-site row">
 				<img class="me" src="assets/img/fellyph.jpg" width="200" height="200" title="Fellyph Cintra" itemprop="image" alt="Fellyph Cintra">
 				<h1 itemprop="name">FELLYPH CINTRA</h1>
-				<h2 itemprop="jobTitle">Front-end engineer</h2>
+				<h2 itemprop="jobTitle">Front-end Engineer</h2>
 			</header>
 
 			<article class="bio row">
@@ -31,9 +31,9 @@
 					<h2>About</h2>
 				</header>
 				<div itemprop="description">
-					<p>I have worked as a Web Developer since 2004. I am currently working as a Front-end engineer at <a href="http://www.elo7.com.br" title="Elo7" alt="Elo7 company">Elo7</a>, where I develop an e-commerce of handmade products in Brasil and Argentina. I’m also a teacher at DRC training center.</p>
+                    <p>I have been working as a Web Developer since 2004. I am currently working as front-end engineer freelancer. I Moved to Dublin this year to look for an opportunity in Europe. My last work experience was at <a href="http://www.elo7.com.br" title="Elo7" alt="Elo7 company">Elo7</a>, a marketplace of handmade products based in Brazil, Argentina and Colombia. During this time, I was also a teacher at DRC training center, an IT school in São Paulo.</p>
 
-					<p>My main focus is frond-end development and my strength is client-side in which I use HTML, CSS, JavaScript, SASS and Compass. On server-side I regularly use Java with vRaptor. I also use GIT for version control, GruntJS for automate tasks and tests with Jenkins.</p>
+                    <p>My strongest skill is client-side front-end development. And My main domains are HTML, CSS, JavaScript, SASS, Compass and AngularJS. On server-side I usually code in Java and PHP. I also use GIT for version control, GruntJS to automate tasks and tests with Ruby(rSpec) and Jenkins. I hold a bachelor degree in Information Systems.</p>
 				</div>
 			</article>
 
@@ -52,16 +52,16 @@
 
 			<section class="blog row">
 			    <header>
-			        <h2>Leia no Blog</h2>
+			        <h2>Blog</h2>
 			    </header>
 			    <blog-article ng-repeat="post in profile.posts"></blog-article>
 			</section>
-			
+
 			<article class="skills row" itemscope itemtype="http://schema.org/ItemList">
 				<header>
 					<h2>Skills</h2>
 				</header>
-				
+
 				<ul class="skill-list">
 					<li class="skill" itemprop="itemListElement">WordPress</li>
 					<li class="skill" itemprop="itemListElement">JavaScript</li>
@@ -73,14 +73,14 @@
 					<li class="skill" itemprop="itemListElement">PHP</li>
 				</ul>
 			</article>
-           
+
             <article class="portfolio row">
                <header>
                    <h2>Portfolio</h2>
                </header>
                 <portfolio-article ng-repeat="portfolio in profile.portfolios"></portfolio-article>
             </article>
-            
+
             <script type="text/javascript" src="assets/components/angular/angular.min.js"></script>
             <script type="text/javascript" src="assets/js/controllers/index.controller.js"></script>
             <script type="text/javascript" src="assets/js/directives/blog-article.directive.js"></script>
