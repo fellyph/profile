@@ -12,10 +12,9 @@
 
 		<meta name="author" content="Fellyph Cintra"/>
 		<meta name="description" content="I am currently working as a Front-end engineer at Elo7, where I develop an e-commerce of handmade products in Brasil and Argentina."/>
-		<meta name="keywords" content="Front-End engineer, Developer, WordPress, HTML5, JavaScript, CSS3, AngularJS"/>
+		<meta name="keywords" content="Front-End engineer, Developer, WordPress, HTML5, JavaScript, CSS3"/>
 
-        <link rel="stylesheet" href="assets/css/style.min.css" />
-
+		<link rel="stylesheet" href="assets/css/style.min.css" />
 		<title>Fellyph Cintra - Front-End Engineer</title>
 	</head>
 
@@ -80,16 +79,8 @@
                    <h2>Portfolio</h2>
                </header>
                 <portfolio-article ng-repeat="portfolio in profile.portfolios"></portfolio-article>
-
-                <a href="http://www.fellyph.com.br/blog/jobs">See more</a>
             </article>
-            <!-- build:js js/main.min.js -->
-            <script type="text/javascript" src="assets/components/angular/angular.min.js"></script>
-            <script type="text/javascript" src="assets/js/controllers/index.controller.js"></script>
-            <script type="text/javascript" src="assets/js/directives/blog-article.directive.js"></script>
-            <script type="text/javascript" src="assets/js/directives/portfolio-article.directives.js"></script>
-            <script type="text/javascript" src="assets/js/services/data.js"></script>
-            <!-- endbuild -->
+            <script src="js/main.min.js"></script>
 		</section>
 	</body>
 </html>
