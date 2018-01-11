@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { JobComponent } from './job/job.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule
