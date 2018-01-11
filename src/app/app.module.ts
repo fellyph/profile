@@ -4,12 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { JobComponent } from './job/job.component';
-
+import { JobListComponent } from './job-list/job-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JobComponent
+    JobComponent,
+    JobListComponent
   ],
   imports: [
     BrowserModule
