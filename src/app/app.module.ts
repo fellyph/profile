@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { JobComponent } from './job/job.component';
 import { JobListComponent } from './job-list/job-list.component';
+import { CategoryListComponent } from './category-list/category-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JobComponent,
-    JobListComponent
+    JobListComponent,
+    CategoryListComponent
   ],
   imports: [
     BrowserModule
