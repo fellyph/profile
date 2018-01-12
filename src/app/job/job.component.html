@@ -1,5 +1,5 @@
 <article class="job">
-    {{job.thumbnailUrl}}
+    <img src="{{job.thumbnailUrl}}" />
     <h4 class="title" (click)="onDetail()">{{job.name}}</h4>
-    <div class="description">{{job.description}}</div>
+    <div class="description" [innerHTML]="job.description"></div>
   </article>

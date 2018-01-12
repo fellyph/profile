@@ -1,8 +1,10 @@
+import { SafeHtml } from "@angular/platform-browser";
+
 class Job {
   constructor(public id: Number,
     public name: string,
     public category: string,
-    public description: string,
+    public description: SafeHtml,
     public thumbnailUrl: string) { }
 }
 
