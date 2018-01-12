@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Job from '../job/Job';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-job-list',
@@ -21,12 +22,25 @@ export class JobListComponent implements OnInit {
     'Desenvolvimento site',
     'images/foto.jpg')
   ];
-
+  jobListJson = [];
   currentFilter = 'All';
 
-  constructor() { }
+  constructor(private jobService: JobService) { }
 
   ngOnInit() {
+    this.jobService.getList().subscribe(
+      data => {
+        this.jobListJson = data;
+        this.mappingJson(data);
+      },
+      err => console.error(err)
+    );
+  }
+
+  mappingJson(data) {
+    this.jobList = data.forEach(element => {
+      console.log(element);
+    });
   }
 
   onFilter(value) {
